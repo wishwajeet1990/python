@@ -1,5 +1,5 @@
 # python
-This is my python leanring journey 
+This is my python leanring journey \n
 In this journey we will start from the basic of python
 the we will learn about IPC in python 
 then numpy panda and for data analysis
