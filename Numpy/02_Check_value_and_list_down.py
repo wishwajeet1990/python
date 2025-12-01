@@ -1,0 +1,5 @@
+import numpy as np
+
+arr = np.array([[-1 ,- 7 , 8 , 2 , 3 , 4 , 5],[10 , -70 , 80 , -20 , 30 , -40 , 50],[100 , 700 , -800 , 200 , 300 , -400 , 500]])
+mask = arr > 3      #check and store the value >3 
+print(arr>10)

@@ -1,0 +1,7 @@
+import numpy as np
+
+arr = np.array([[-1 ,- 7 , 8 , 2 , 3 , 4 , 5],[10 , -70 , 80 , -20 , 30 , -40 , 50],[100 , 700 , -800 , 200 , 300 , -400 , 500]])
+
+print(np.size(arr)) #gives you the total number of element in and array
+
+print(np.shape(arr))    #Gives you the diamension of the array  

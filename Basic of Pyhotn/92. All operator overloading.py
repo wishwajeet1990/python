@@ -1,0 +1,11 @@
+print ("""
+str(obj) / print(obj)	            __str__(self)
+repr(obj)	                    __repr__(self)
+bytes(obj)	                    __bytes__(self)
+format(obj)	                    __format__(self, format_spec)
+bool(obj)	                    __bool__(self)
+int(obj)	                    __int__(self)
+float(obj)	                    __float__(self)
+complex(obj)	                    __complex__(self)
+hash(obj)	                    __hash__(self)
+""")
