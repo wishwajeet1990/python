@@ -3,6 +3,7 @@
 
 i = 0
 
+
 def outer(my_func):
     global i 
     i = i+1

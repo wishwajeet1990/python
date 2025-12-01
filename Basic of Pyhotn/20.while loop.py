@@ -15,3 +15,4 @@ while i < count+1:
         print("|",end="")
     print(i)
     i += 1
+    

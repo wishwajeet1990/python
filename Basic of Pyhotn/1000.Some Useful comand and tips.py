@@ -27,3 +27,4 @@ for item in dir(str):
     
     if not item.startswith('__'):
         print(item)
+

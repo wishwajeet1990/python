@@ -22,6 +22,7 @@ print(tpl[-1])     # print the value at 1st location from the reverse of the tup
 print(tpl[1:])     # print element from the 1st pos till end 
 print(tpl[:2])     # print element from 0th pos to till 2nd -1  element
 
+
 #looping through tuple
 
 for t_i in tpl:

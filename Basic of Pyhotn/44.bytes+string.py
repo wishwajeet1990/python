@@ -4,6 +4,7 @@ this encoding is necessary if you dealing with string data type while working on
 ASCII
 UTF-8
 utf-16
+
 latin-1
 cp1252
 ------------------------end--------------------------------------------------------------------

@@ -15,6 +15,7 @@ print(data)          # bytearray(b'Aishcajeet')
 mystr = b"Wishwajeet"
 print(mystr)
 
+
 print(mystr[3]) # It will print the 4th letter of the string
 n_mv = memoryview(mystr)
 # n_mv[4]= 127 # it will raise an error while run with comment this line because this will not work directly without bytearray

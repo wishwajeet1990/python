@@ -1,0 +1,423 @@
+[33mcommit a6dbd33b0782934e7c5eb52c885edb8167ff9869[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Wishwajeet <Wishwajeetrana1990@gmail.com>
+Date:   Mon Dec 1 15:36:24 2025 +0530
+
+    Initial add
+
+[1mdiff --git a/.vscode/arm_toolchain.json b/.vscode/arm_toolchain.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5e102f5[m
+[1m--- /dev/null[m
+[1m+++ b/.vscode/arm_toolchain.json[m
+[36m@@ -0,0 +1,52 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m  "build_select": "configuration_name",[m
+[32m+[m[32m  "configurations": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m      "name": "configuration_name",[m
+[32m+[m[32m      "prj_name": "project_name",[m
+[32m+[m[32m      "loader_path": "",[m
+[32m+[m[32m      "c_include_paths": [[m
+[32m+[m[32m        ""[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "a_include_paths": [[m
+[32m+[m[32m        ""[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "c_source_paths": [[m
+[32m+[m[32m        ""[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "general_flags": [[m
+[32m+[m[32m        "mcpu=cortex-m0",[m
+[32m+[m[32m        "specs=nosys.specs"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "a_output_flags": [[m
+[32m+[m[32m        "Wa,--warn"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "c_output_flags": [[m
+[32m+[m[32m        "Og",[m
+[32m+[m[32m        "std=gnu11"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "l_output_flags": [[m
+[32m+[m[32m        "Wl,--defsym=malloc_getpagesize_P=0x1000"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "a_defines": [[m
+[32m+[m[32m        ""[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "c_defines": [[m
+[32m+[m[32m        ""[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "l_library": [[m
+[32m+[m[32m        ""[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "exclude_paths": [[m
+[32m+[m[32m        ""[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "exclude_files": [[m
+[32m+[m[32m        ""[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "toolchain_path": "",[m
+[32m+[m[32m      "bin_gcc": "arm-none-eabi-gcc",[m
+[32m+[m[32m      "bin_objcpy": "arm-none-eabi-objcopy",[m
+[32m+[m[32m      "bin_size": "arm-none-eabi-size"[m
+[32m+[m[32m    }[m
+[32m+[m[32m  ][m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/.vscode/c_cpp_properties.json b/.vscode/c_cpp_properties.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cea4d3f[m
+[1m--- /dev/null[m
+[1m+++ b/.vscode/c_cpp_properties.json[m
+[36m@@ -0,0 +1,18 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m  "configurations": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m      "name": "windows-gcc-x64",[m
+[32m+[m[32m      "includePath": [[m
+[32m+[m[32m        "${workspaceFolder}/**"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "compilerPath": "gcc",[m
+[32m+[m[32m      "cStandard": "${default}",[m
+[32m+[m[32m      "cppStandard": "${default}",[m
+[32m+[m[32m      "intelliSenseMode": "windows-gcc-x64",[m
+[32m+[m[32m      "compilerArgs": [[m
+[32m+[m[32m        ""[m
+[32m+[m[32m      ][m
+[32m+[m[32m    }[m
+[32m+[m[32m  ],[m
+[32m+[m[32m  "version": 4[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/.vscode/launch.json b/.vscode/launch.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2f014ea[m
+[1m--- /dev/null[m
+[1m+++ b/.vscode/launch.json[m
+[36m@@ -0,0 +1,24 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m  "version": "0.2.0",[m
+[32m+[m[32m  "configurations": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m      "name": "C/C++ Runner: Debug Session",[m
+[32m+[m[32m      "type": "cppdbg",[m
+[32m+[m[32m      "request": "launch",[m
+[32m+[m[32m      "args": [],[m
+[32m+[m[32m      "stopAtEntry": false,[m
+[32m+[m[32m      "externalConsole": true,[m
+[32m+[m[32m      "cwd": ".",[m
+[32m+[m[32m      "program": "build/Debug/outDebug",[m
+[32m+[m[32m      "MIMode": "gdb",[m
+[32m+[m[32m      "miDebuggerPath": "gdb",[m
+[32m+[m[32m      "setupCommands": [[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "description": "Enable pretty-printing for gdb",[m
+[32m+[m[32m          "text": "-enable-pretty-printing",[m
+[32m+[m[32m          "ignoreFailures": true[m
+[32m+[m[32m        }[m
+[32m+[m[32m      ][m
+[32m+[m[32m    }[m
+[32m+[m[32m  ][m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/.vscode/settings.json b/.vscode/settings.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c11bfca[m
+[1m--- /dev/null[m
+[1m+++ b/.vscode/settings.json[m
+[36m@@ -0,0 +1,72 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m  "cSpell.words": [[m
+[32m+[m[32m    "Amit",[m
+[32m+[m[32m    "dtls",[m
+[32m+[m[32m    "dunder",[m
+[32m+[m[32m    "Kolkatta",[m
+[32m+[m[32m    "Rahul",[m
+[32m+[m[32m    "Satyajeet",[m
+[32m+[m[32m    "Wishwajeet",[m
+[32m+[m[32m    "Wishwajet"[m
+[32m+[m[32m  ],[m
+[32m+[m[32m  "python-envs.defaultEnvManager": "ms-python.python:system",[m
+[32m+[m[32m  "python-envs.pythonProjects": [],[m
+[32m+[m[32m  "python-envs.defaultPackageManager": "ms-python.python:pip",[m
+[32m+[m[32m  "C_Cpp_Runner.cCompilerPath": "gcc",[m
+[32m+[m[32m  "C_Cpp_Runner.cppCompilerPath": "g++",[m
+[32m+[m[32m  "C_Cpp_Runner.debuggerPath": "gdb",[m
+[32m+[m[32m  "C_Cpp_Runner.cStandard": "",[m
+[32m+[m[32m  "C_Cpp_Runner.cppStandard": "",[m
+[32m+[m[32m  "C_Cpp_Runner.msvcBatchPath": "C:/Program Files/Microsoft Visual Studio/VR_NR/Community/VC/Auxiliary/Build/vcvarsall.bat",[m
+[32m+[m[32m  "C_Cpp_Runner.useMsvc": false,[m
+[32m+[m[32m  "C_Cpp_Runner.warnings": [[m
+[32m+[m[32m    "-Wall",[m
+[32m+[m[32m    "-Wextra",[m
+[32m+[m[32m    "-Wpedantic",[m
+[32m+[m[32m    "-Wshadow",[m
+[32m+[m[32m    "-Wformat=2",[m
+[32m+[m[32m    "-Wcast-align",[m
+[32m+[m[32m    "-Wconversion",[m
+[32m+[m[32m    "-Wsign-conversion",[m
+[32m+[m[32m    "-Wnull-dereference"[m
+[32m+[m[32m  ],[m
+[32m+[m[32m  "C_Cpp_Runner.msvcWarnings": [[m
+[32m+[m[32m    "/W4",[m
+[32m+[m[32m    "/permissive-",[m
+[32m+[m[32m    "/w14242",[m
+[32m+[m[32m    "/w14287",[m
+[32m+[m[32m    "/w14296",[m
+[32m+[m[32m    "/w14311",[m
+[32m+[m[32m    "/w14826",[m
+[32m+[m[32m    "/w44062",[m
+[32m+[m[32m    "/w44242",[m
+[32m+[m[32m    "/w14905",[m
+[32m+[m[32m    "/w14906",[m
+[32m+[m[32m    "/w14263",[m
+[32m+[m[32m    "/w44265",[m
+[32m+[m[32m    "/w14928"[m
+[32m+[m[32m  ],[m
+[32m+[m[32m  "C_Cpp_Runner.enableWarnings": true,[m
+[32m+[m[32m  "C_Cpp_Runner.warningsAsError": false,[m
+[32m+[m[32m  "C_Cpp_Runner.compilerArgs": [],[m
+[32m+[m[32m  "C_Cpp_Runner.linkerArgs": [],[m
+[32m+[m[32m  "C_Cpp_Runner.includePaths": [],[m
+[32m+[m[32m  "C_Cpp_Runner.includeSearch": [[m
+[32m+[m[32m    "*",[m
+[32m+[m[32m    "**/*"[m
+[32m+[m[32m  ],[m
+[32m+[m[32m  "C_Cpp_Runner.excludeSearch": [[m
+[32m+[m[32m    "**/build",[m
+[32m+[m[32m    "**/build/**",[m
+[32m+[m[32m    "**/.*",[m
+[32m+[m[32m    "**/.*/**",[m
+[32m+[m[32m    "**/.vscode",[m
+[32m+[m[32m    "**/.vscode/**"[m
+[32m+[m[32m  ],[m
+[32m+[m[32m  "C_Cpp_Runner.useAddressSanitizer": false,[m
+[32m+[m[32m  "C_Cpp_Runner.useUndefinedSanitizer": false,[m
+[32m+[m[32m  "C_Cpp_Runner.useLeakSanitizer": false,[m
+[32m+[m[32m  "C_Cpp_Runner.showCompilationTime": false,[m
+[32m+[m[32m  "C_Cpp_Runner.useLinkTimeOptimization": false,[m
+[32m+[m[32m  "C_Cpp_Runner.msvcSecureNoWarnings": false[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/07_mean.py b/07_mean.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..79d9399[m
+[1m--- /dev/null[m
+[1m+++ b/07_mean.py[m
+[36m@@ -0,0 +1,12 @@[m
+[32m+[m[32mimport numpy as np[m
+[32m+[m
+[32m+[m[32mmy_arr  = np.array([1,2,3,4,5,6,7,8,9,11,20])[m
+[32m+[m[32msum=0[m
+[32m+[m[32mfor i in range(1,np.size(my_arr)):[m
+[32m+[m[32m    print(i,end="")[m
+[32m+[m[32m    sum += my_arr[i][m
+[32m+[m[32m    print("SUM  = ",sum)[m
+[32m+[m[32mprint("Sum  = ",sum)[m
+[32m+[m[32mprint("Built in function = ",np.mean(my_arr))[m
+[32m+[m[32msize = np.size(my_arr)[m
+[32m+[m[32mprint("Calculated ",sum/size)[m
+\ No newline at end of file[m
+[1mdiff --git a/Basic of Pyhotn/0.About.py b/Basic of Pyhotn/0.About.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..67e0ced[m
+[1m--- /dev/null[m
+[1m+++ b/Basic of Pyhotn/0.About.py[m	
+[36m@@ -0,0 +1,60 @@[m
+[32m+[m[32m# This Chapter tells you the brief description about the python[m
+[32m+[m[32m# lets begin[m
+[32m+[m
+[32m+[m[32mprint("-----------------------------------------------------------let's do python-----------------------------------------------------------\n")[m
+[32m+[m[32mprint("Q1. What is python ?\n")[m
+[32m+[m[32mprint("Ans :- Python is a high level object oriented scriptive language that is used develop the website, application software and automation task ")[m
+[32m+[m[32mprint("Python was created in the late 1980s\n")[m
+[32m+[m[32mprint("Q2. What is script ?\n")[m
+[32m+[m[32mprint("Ans :- In terms of programming language A Script is a set of instruction the are executed line by line.\n")[m
+[32m+[m[32mprint("Q3. Who develop the python ?\n")[m
+[32m+[m[32mprint("Ans :- Guido van Rossum while he was working in netherland\n")[m
+[32m+[m[32mprint("Q4. What are the basic uses of python ?\n")[m
+[32m+[m[32mprint("Ans :- 1 . Web Development\n       2. Software development\n       3. Data Science\n       4. Automation \n")[m
+[32m+[m[32mprint("Q5. What we going to learn ?\n")[m
+[32m+[m[32mprint("Ans :- We are going to learn python for AI/ML and for Data science\n")[m
+[32m+[m[32mprint("Q6. Feature/property or why we use python?\n")[m
+[32m+[m[32mprint("Ans :- 1. Python is easy to learn\n       2. No need to think much about the memory handle tech using pointer, array python will take care of it itself\n       3.open source\n")[m
+[32m+[m[32mprint("Q7. How does the name python comes from ?\n")[m
+[32m+[m[32mprint("Ans :- while guido van rossum was working on a language and was confuse to give the name to the new language project .\nIncidently the BBC was broadcasting the shows name monty flying circus and the guido van rossum was found of the that shows and the character that he like most was python .\nFinally he decide to give the new name to the language project as python")[m
+[32m+[m[32mprint("Q8. How many python IDE available ?\n")[m
+[32m+[m[32mprint("Ans :-Pycharm\t\tSpyder\n\t  VS Code\t\tJupiter Notebook\n\t  IDLI\t\t\tVIM\n\t  Emac\nAre some famous IDE to write down the script of the python")[m
+[32m+[m[32mprint("Q9. Which IDE you used ?\n")[m
+[32m+[m[32mprint("Ans :- We use VS Code.\n")[m
+[32m+[m[32mprint("Q10. Consol V/s Display")[m
+[32m+[m[32mprint("Ans :- Text base interaction is called consol while visual representation of data is called display")[m
+[32m+[m[32mprint("Q11. What are the keyword? And how may keywords in python?")[m
+[32m+[m[32mprint("Ans :- Keyword are the reserved word. These word cann't be used for any other purpose. They do have some specific task or purpose\nThere are 35 Keyword in python")[m
+[32m+[m[32mprint("Ans :-\n")[m
+[32m+[m[32mprint("\t\tFalse\t\tNone\t\tTrue\t\tand\t\tas\t\tassert\t\tasync\t\tawait\t\tbreak\t\tclass\t\tcontinue")[m
+[32m+[m[32mprint("\t\tdef\t\tdel\t\telif\t\telse\t\texcept\t\tfinallyt\t\tfor\t\tfrom\t\tglobal")[m
+[32m+[m[32mprint("\t\tif\t\timport\t\tin\t\tis\t\tlambda\t\tnonlocal\t\tnot\t\tor\t\tpass")[m
+[32m+[m[32mprint("\t\traise\t\treturn\t\ttry\t\twhile\t\twith\t\tyield")[m
+[32m+[m[32mprint("Q12. What are control flow keyword in python?")[m
+[32m+[m[32mprint("Ans :- The keyword that control the flow of the programme is known as control key word.")[m
+[32m+[m[32mprint("like : -\n\t\tif\t\telse\t\telif\t\twhile\t\tfor etc")[m
+[32m+[m[32mprint("Q12. What are exception handling in python?")[m
+[32m+[m[32mprint("Ans :- The keyword that are used to handle the exception in programme is known as exception handler.")[m
+[32m+[m[32mprint("like : -\n\t\ttry\t\tcatch\t\tfinally")[m
+[32m+[m[32mprint("Q12. misc?")[m
+[32m+[m[32mprint("Ans :- def - define function \nlambda - Create annonyms function\nclass - define class")[m
+[32m+[m[32mprint("global - use global variable in fuction\nnonlocal - modifying the variable in an enclosing function")[m
+[32m+[m[32mprint("Boolean - True,False\nNone - represent the no value or none")[m
+[32m+[m[32mprint("Logical comparision ")[m
+[32m+[m[32mprint("logical operator :- and, or , not")[m
+[32m+[m[32mprint("Identifires :- is,in")[m
+[32m+[m[32mprint("Import module :-  import,as,from ")[m
+[32m+[m[32mprint("Resource management :- with - like file handling")[m
+[32m+[m[32mprint("del - delete an object")[m
+[32m+[m[32mprint("self - represent the instance of the class")[m
+[32m+[m[32mprint("property of the below data type in python")[m
+[32m+[m[32mprint("\t\t\tlist\t\t\ttuple\t\t\tset\t\t\tdictonary\t\tbyte\t\tbytearray")[m
+[32m+[m[32mprint("mutable \tyes\t\t\t\tNo\t\t\t\tyes\t\t\tyes\t\t\t\tno\t\t\tYes")[m
+[32m+[m[32mprint("Ordered \tyes\t\t\t\tyes\t\t\t\tyes*/No*\tyes\t\t\t\tyes\t\t\tYes")[m
+[32m+[m[32mprint("Duplicate \tyes\t\t\t\tyes\t\t\t\tNo\t\t\tNo\t\t\t\tyes\t\t\tYes")[m
+[32m+[m
+[32m+[m[32mprint("An object that can be called like a function using parentheses ().")[m
+[32m+[m
+[32m+[m
+[32m+[m[32mprint("*args  =  Store the tuple value in while calling the function ")[m
+[32m+[m[32mprint("**kwargs =  stores the dict value while passing through the function calling")[m
+[1mdiff --git a/Basic of Pyhotn/1.Variable.py b/Basic of Pyhotn/1.Variable.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..765e9df[m
+[1m--- /dev/null[m
+[1m+++ b/Basic of Pyhotn/1.Variable.py[m	
+[36m@@ -0,0 +1,13 @@[m
+[32m+[m[32m# This is multiline comment[m[41m [m
+[32m+[m[32m# In This file we will learn how to store the value in variable and[m[41m [m
+[32m+[m[32m# let access them using printf function[m
+[32m+[m
+[32m+[m[32m#this is simple one line coments[m[41m [m
+[32m+[m
+[32m+[m[32mvar1 = 5.5  #this Float value[m
+[32m+[m[32mvar2 = 6    #this integer value[m
+[32m+[m[32mvar3 = "Wishwajeet Singh"   #this is string value[m
+[32m+[m[32mprint("This is just simple String passed to the print function \nHello Python")[m
+[32m+[m[32mprint("addition  = ",var1+var2)[m
+[32m+[m[32mprint("Name :- ",var3)[m
+[32m+[m[32mls[m
+\ No newline at end of file[m
+[1mdiff --git a/Basic of Pyhotn/10.Take Input From User.py b/Basic of Pyhotn/10.Take Input From User.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0dab616[m
+[1m--- /dev/null[m
+[1m+++ b/Basic of Pyhotn/10.Take Input From User.py[m	
+[36m@@ -0,0 +1,18 @@[m
+[32m+[m[32m#This chapter will make you learn about  how to take input from user[m
+[32m+[m[32m#we take input using input function in python[m
+[32m+[m
+[32m+[m
+[32m+[m[32mprint("What is your name ?")[m
+[32m+[m[32mname = input()[m
+[32m+[m[32mprint("what is your age?")[m
+[32m+[m[32mage = int(input())[m
+[32m+[m[32mif(age <18):[m
+[32m+[m[32m    print(f"Mr {name} your age is {age} . hence you are minor and not liable to drive the vehicle") #using string format[m
+[32m+[m[32m    print("Mr {} your age is {} . hence you are minor and not liable to drive the vehicle".format(name,age)) #using string format function[m
+[32m+[m[32m    print("Mr %s your age is %s . hence you are minor and not liable to drive the vehicle"%(name,age)) #using old style string format[m
+[32m+[m[32melse:[m
+[32m+[m[32m    print(f"Mr {name} your age is {age} . hence you are adult and liable to drive the vehicle") #using string format[m
+[32m+[m[32m    print("Mr {} your age is {} . hence you are minor and not liable to drive the vehicle".format(name,age)) #using string format function[m
+[32m+[m[32m    print("Mr %s your age is %s . hence you are minor and not liable to drive the vehicle"%(name,age)) #using old style string format[m
+[32m+[m[41m    [m
+[32m+[m[32mprint("after being update of code runner setting")[m
+[1mdiff --git a/Basic of Pyhotn/1000.Some Useful comand and tips.py b/Basic of Pyhotn/1000.Some Useful comand and tips.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cb75007[m
+[1m--- /dev/null[m
+[1m+++ b/Basic of Pyhotn/1000.Some Useful comand and tips.py[m	
+[36m@@ -0,0 +1,29 @@[m
+[32m+[m[32m# dir() → Shows all attributes and methods (including special methods)[m
+[32m+[m
+[32m+[m[32mimport os       #Access the system level command[m
+[32m+[m
+[32m+[m[32m# Clear command for Windows ('cls') and Unix/Linux/Mac ('clear')[m
+[32m+[m[32mos.system("clear")      #This method is used to run the system command using system method.[m
+[32m+[m[32m# os.system("dir")        #This method is used to run the system command using system method.[m
+[32m+[m
+[32m+[m[32m# print("Str")[m
+[32m+[m[32m# print(dir(str))      # For str class[m
+[32m+[m[32mprint("OS related")[m
+[32m+[m[32mprint(dir(os))[m
+[32m+[m[32mdetails =  os.times()[m
+[32m+[m[32mprint(details.system )[m
+[32m+[m[32mprint("\n")[m
+[32m+[m[32mprint("list")[m
+[32m+[m[32mprint(dir(list))     # For list class[m
+[32m+[m[32mprint("\n")[m
+[32m+[m[32mprint("Dict")[m
+[32m+[m[32mprint(dir(dict))     # For dict class[m
+[32m+[m
+[32m+[m[32m""" help() → Gives detailed documentation (press q to quit help viewer)"""[m
+[32m+[m
+[32m+[m[32mhelp(str)        # Shows doc string and methods of the str class[m
+[32m+[m[32mhelp(dict)      # Shows doc string and methods of the str class[m
+[32m+[m[32mfor item in dir(str):[m
+[32m+[m[41m    [m
+[32m+[m[32m    if not item.startswith('__'):[m
+[32m+[m[32m        print(item)[m
+[1mdiff --git a/Basic of Pyhotn/11.Binary Data Type.py b/Basic of Pyhotn/11.Binary Data Type.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d298c69[m
+[1m--- /dev/null[m
+[1m+++ b/Basic of Pyhotn/11.Binary Data Type.py[m	
+[36m@@ -0,0 +1,66 @@[m
+[32m+[m[32m#This chapter tell you about the binary data type[m
+[32m+[m
+[32m+[m[32m#these data type are used to store the binary data[m
+[32m+[m
+[32m+[m[32m"""----------------syntax---------------------------[m
+[32m+[m[32mbytes([int_1,int_2,int_3............int_n])[m
+[32m+[m[32mbytearray([int_0_1,int_0_2,int_0_3............int_0_n],[int_1_1,int_1_2,int_1_3............int_1_n])"""[m
+[32m+[m
+[32m+[m[32m#let us deep drive into the byte data type using some example[m
+[32m+[m
+[32m+[m[32mprint("Fetcting the byte data types")[m
+[32m+[m
+[32m+[m[32mprint("Using Tuple")[m
+[32m+[m[32mbyt = bytes((65,66,67)) #using tuple[m
+[32m+[m[32mprint(byt)[m
+[32m+[m[32mprint("\n")[m
+[32m+[m[32mprint("Using sets")[m
+[32m+[m[32mbyt = bytes({68,69,70}) #using sets[m
+[32m+[m[32mprint(byt)[m
+[32m+[m[32mprint("\n")[m
+[32m+[m[32mprint("Using List")[m
+[32m+[m[32mbyt = bytes([71,72,73]) #using list[m
+[32m+[m[32mprint(byt)[m
+[32m+[m[32mprint("\n")[m
+[32m+[m
+[32m+[m[32mprint("Print String using byte data type")[m
+[32m+[m[32mbyt = bytes([72,69,76,76,79]) #using byte Data type "HELLO"[m
+[32m+[m[32mprint(byt)[m
+[32m+[m[32mprint("\n")[m
+[32m+[m
+[32m+[m
+[32m+[m[32m#This will not work[m[41m [m
+[32m+[m[32m# print("Using dict")[m
+[32m+[m[32m# my_dict = {"Wishwajeet":99,"Jhon":98,"Monu":95}[m
+[32m+[m[32m# b_a = bytes(my_dict) #using list[m
+[32m+[m[32m# print(b_a)[m
+[32m+[m[32m# print("\n")[m
+[32m+[m
+[32m+[m[32m#print the bytearray[m[41m [m
+[32m+[m
+[32m+[m[32mprint("Fetcting the bytearray data types")[m
+[32m+[m
+[32m+[m[32mprint("Bytearray Using Tuple")[m
+[32m+[m[32mbyt_arr = bytearray((65,66,67)) #Bytearray using tuple[m
+[32m+[m[32mprint(byt_arr)[m
+[32m+[m[32mprint("\n")[m
+[32m+[m[32mprint("Bytearray Using sets")[m
+[32m+[m[32mbyt_arr = bytearray({67,68,69}) #Bytearray using sets[m
+[32m+[m[32mprint(byt_arr)[m
+[32m+[m[32mprint("\n")[m
+[32m+[m[32mprint("Bytearray Using List")[m
+[32m+[m[32mbyt_arr = bytearray([70,71,72]) #Bytearray using list[m
+[32m+[m[32mprint(byt_arr)[

@@ -8,4 +8,3 @@ class MyClass:
 
 obj = MyClass()
 print(obj.name)  # ✅ Allowed
-

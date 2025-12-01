@@ -9,6 +9,7 @@ any_num = 12
 print(callable(len))        # Return true bcz the built in function of python is callable 
 print(callable(any_num))    # this return false bcz it is just a variable 
 
+
 def greet():
     print("Hello!")
     

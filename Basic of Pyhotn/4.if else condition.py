@@ -18,6 +18,7 @@ else:
     
 condition = False
 
+
 if condition:
     print("Return True result\n")
 else:

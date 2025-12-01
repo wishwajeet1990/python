@@ -13,3 +13,4 @@ print(new_dict)
 new_dict["b"].remove(5)         # Remove 5 from the list of the dictionary 
 new_dict["b"].remove(20)        # Remove 20 from the list of the dictionary from first occurence  
 print(new_dict)
+

@@ -5,7 +5,6 @@
 
 """
 
-
 |   Dunder method          | When Python calls it                     | Example                |
 | ------------------------ | ---------------------------------------- | ---------------------- |
 | `__init__`               | When creating a new object               | `obj = MyClass()`      |

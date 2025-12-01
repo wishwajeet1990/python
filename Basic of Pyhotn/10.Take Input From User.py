@@ -16,3 +16,4 @@ else:
     print("Mr %s your age is %s . hence you are minor and not liable to drive the vehicle"%(name,age)) #using old style string format
     
 print("after being update of code runner setting")
+

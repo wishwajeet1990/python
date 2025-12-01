@@ -23,6 +23,7 @@ if 107 in student:
 names = list([])
 print("\n")
 
+
 #extracting the key value pair from the nested dictionary
 
 names = [Details["name"] for Details in student.values()] #Retrieve name only

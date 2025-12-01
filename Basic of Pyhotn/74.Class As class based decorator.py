@@ -14,7 +14,7 @@ class prefix:
         clsc.__init__ = update_init
         return clsc
     
-@prefix("Mr. ")     #Here we had done like this // pre = prefix("Mr.") // create an object of the class prefix the we call  //      pre.__call__(pre)      //
+@prefix("Mr. ")     #Here we had done like this // p1 = prefix("Mr.") // create an object of the class prefix the we call  //      p1.__call__(p1)      //
 class person:
     def __init__(self,name):
         self.name = name

@@ -9,3 +9,4 @@ def outer():
     inner()
 outer()
 print(name)
+

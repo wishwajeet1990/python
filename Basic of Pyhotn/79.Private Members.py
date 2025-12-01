@@ -16,4 +16,5 @@ obj.show()  # ✅ Works
 # print(obj.__secret)  # ❌ AttributeError
 print(obj._MyClass__secret)  # ⚠ Possible but breaking convention
 
+
 print(obj.__dict__)

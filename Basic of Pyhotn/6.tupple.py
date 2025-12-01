@@ -19,6 +19,7 @@ my_tupple = tuple("Wishwajeet")   #Passing String literal to the tuple construct
 print(my_tupple)
 print("\n")
 
+
  #or
 
 print("Using string literal tupple constructor\n")

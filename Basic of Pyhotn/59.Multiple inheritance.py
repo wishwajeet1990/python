@@ -11,6 +11,7 @@ class Child(father,Mother):
     def car(self):
         print("Child Car")
         
+        
 c = Child() #Now the child can be able to access the both the class function 
 
 

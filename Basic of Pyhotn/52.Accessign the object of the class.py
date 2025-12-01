@@ -5,6 +5,7 @@ class emp:
         self.name = name
         self.emp_id = empid
         self.Sal = salary
+        
 
 e1 = object.__new__(emp)
 emp.__init__(e1,"wishwajeet singh",213,200000)

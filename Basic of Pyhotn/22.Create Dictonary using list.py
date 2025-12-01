@@ -25,6 +25,7 @@ print("Using tuple of list \n",pair_list)
 print(my_dict.keys())
 print(my_dict.values())
 
+
 #Create dictionary using tuple of tuple
 #Each Tuple should have only one key value pair in it's pair of tuple
 

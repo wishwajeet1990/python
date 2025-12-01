@@ -15,5 +15,6 @@ class C(A):
 class D(B, C):
     pass
 
+
 obj = D()
 obj.feature()  # Output: Feature from B

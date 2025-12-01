@@ -7,6 +7,7 @@ class test_class:
         self.sex = sex
         self.exp=exp
 
+
 t1 = object.__new__(test_class)
 test_class.__init__(t1,"wishwajeet",34,"M","6 Yrs")
 print()

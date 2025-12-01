@@ -19,6 +19,7 @@ print(lst1[-1])     # print reverse element at nth position in case i.e 2  50
 print(lst1[1:4])    # print list from start and end pos given as argument in this case i.e [20, 30, 40]
 print(lst1[7:2:-1])   #print reverse of list using -1 step count
 
+
 print("Adding Elements")
 lst1.append(6)                # add single item 4 at the end of the end of the list[1, 2, 3, 4]
 print(lst1)

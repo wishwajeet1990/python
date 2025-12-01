@@ -16,3 +16,4 @@ try:
     print(10/0)
 except ZeroDivisionError:
     print("Can't divide 10 by zero")
+    

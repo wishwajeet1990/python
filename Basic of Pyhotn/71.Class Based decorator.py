@@ -15,6 +15,7 @@ class my_decorator_class:
         print("End the __call__ method of the class")
         return result
 
+
 @my_decorator_class         #when we decorate a function as class based decorator it basically create an 
                             # instance of that class and call init function just once 
                             # then after just calls the __call__function

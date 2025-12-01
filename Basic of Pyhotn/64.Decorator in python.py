@@ -8,4 +8,5 @@ def deco_func(my_func):         #This is normal function decorator
 def my_normal_function():
     print("this is my normal function")
 
+
 my_normal_function()

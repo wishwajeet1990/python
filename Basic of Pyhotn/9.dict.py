@@ -4,6 +4,7 @@
 # dict_name = {key_1:value1,key_2:value2...........key_n}
 #or by using constructor 
 
+
 #variable_name = dict(iterable item)
 
 #create dict using standard format

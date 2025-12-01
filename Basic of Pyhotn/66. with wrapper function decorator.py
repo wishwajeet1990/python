@@ -24,6 +24,7 @@ say_hello()     #Now whenever we call the say hello function the log deco functi
 say_hello()     #Now whenever we call the say hello function the log deco function will automatically run
 say_hello()     #Now whenever we call the say hello function the log deco function will automatically run
 
+
 """-------------------------output---------------------------------------------
             Logging before function runs......
             Hello using say hello function

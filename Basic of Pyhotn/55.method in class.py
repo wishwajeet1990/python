@@ -1,5 +1,6 @@
 #Methods in class are the function class that are bound to the object of the class
 
+
 class car:
     def __init__(self,make,model,year):
         self.Make = make

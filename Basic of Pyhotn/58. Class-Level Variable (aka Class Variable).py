@@ -6,6 +6,7 @@
 # Defined outside any methods, but inside the class.
 # Belongs to the class, not to any one object.
 
+
 class Student:
     school_name = "DPS"  # class variable
 

@@ -16,3 +16,4 @@ print(b)  # b'Caf '
 # Using "replace" to insert ?
 b = bytes(s, encoding="ascii", errors="replace")    # replace with ? 
 print(b)  # b'Caf? ?'
+

@@ -4,6 +4,7 @@ class student:
     name = None
     roll_no= None
     class_n = None
+    
 
 #Wrong practice because the default constructor is not taking any other argument other than self
 s1 = object.__new__(student)

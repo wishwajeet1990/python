@@ -17,6 +17,7 @@ B- Finally the programme gives the priority the builtin data type in python
 --------------------------------END--------------------------------------------"""
 
 
+
 name = "Wishwajeet Singh"   # This variable will accessible within any block 
 #whenever you want to chang their value then you need to access it with the prefix global else you can use it 
 

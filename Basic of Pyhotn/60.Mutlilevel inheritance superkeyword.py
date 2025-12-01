@@ -10,6 +10,7 @@ class Father:
         print(self.fat_name,self.family_title)
         print(self.fat_age," years old")
         
+
 class Mother(Father):
     def __init__(self,m_name,f_name,f_age,m_age):
         self.mot_name = m_name

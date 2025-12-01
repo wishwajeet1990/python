@@ -13,6 +13,7 @@ And when want to tell the user about the function return type we use simply
 
 For example
 
+
             def function_name(param1: hint type1, param2: hint type2) -> hint return_type:
             
             

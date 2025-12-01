@@ -8,6 +8,7 @@ class ClassName:
         self.attr1 = arg1
         self.attr2 = arg2
         
+        
         class ClassName:             Defines a class named ClassName.
         
         def __init__(self, ...)     __init__ is a constructor — automatically called when an object is created.

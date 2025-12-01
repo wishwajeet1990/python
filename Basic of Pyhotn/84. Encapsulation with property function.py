@@ -20,4 +20,7 @@ account = BankAccount(1000)
 print(account.balance)   # ✅ Get balance
 account.balance = 500    # ✅ Set balance
 account.balance = -200   # ❌ Rejected
+print(account.balance)
+account = BankAccount(-1000)
+print(account.balance)
 

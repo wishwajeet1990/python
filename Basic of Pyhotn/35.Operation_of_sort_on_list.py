@@ -5,3 +5,4 @@ print(my_list)
 new_unique_list  = list(set(my_list))
 new_unique_list.sort()
 print(new_unique_list)
+

@@ -18,3 +18,4 @@ try:
     check_marks()
 except InvalidMarkError as e:
     print("Caught:", e)
+

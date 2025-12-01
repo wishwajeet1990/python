@@ -15,6 +15,7 @@ class calculator:
         print(calculator.name)
         return a+b
 
+
 c1 = calculator()
 print(c1.name)
 print(calculator.add(5,7))      #Calling of static method is same as that of regular function

@@ -8,3 +8,4 @@ def new_function():
     # behave like local variable and print the local variable instead the global one
     
 new_function()
+

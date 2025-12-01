@@ -1,6 +1,5 @@
 # This Chapter tells you the brief description about the python
 # lets begin
-
 print("-----------------------------------------------------------let's do python-----------------------------------------------------------\n")
 print("Q1. What is python ?\n")
 print("Ans :- Python is a high level object oriented scriptive language that is used develop the website, application software and automation task ")

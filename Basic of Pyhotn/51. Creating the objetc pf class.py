@@ -6,6 +6,7 @@ class emp:
         self.empid = emp_id
         self.sal = salary
 
+
 e1 = object.__new__(emp)                    #create empty object this one need to initialize latter
 #or
 

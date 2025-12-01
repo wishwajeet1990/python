@@ -23,6 +23,7 @@ byt = bytes([71,72,73]) #using list
 print(byt)
 print("\n")
 
+
 print("Print String using byte data type")
 byt = bytes([72,69,76,76,79]) #using byte Data type "HELLO"
 print(byt)

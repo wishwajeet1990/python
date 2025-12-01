@@ -23,6 +23,7 @@ print("You are underage") if(age<18) else print("Your are Adult")
 
 #or
 
+
 status = "underage" if(age<18) else "Adult"
 print(f"you are {status}")
 

@@ -15,3 +15,4 @@ print(list(my_range))   # simply use to print the simply list of the range
 for i in my_range:      #for loop and in keyword together
     print(i)
     
+    

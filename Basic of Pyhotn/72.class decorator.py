@@ -20,5 +20,6 @@ class Person:
         self.sex = sex
 
 p = Person("Wishwajeet", 31,"male")
-print(p.name)  # Mr. Wishwajeet
+# print(p.age)  # 31
+print("Hi",p.name,"Age :-",p.age,"Gender :-",p.sex)  # Hi Mr. Wishwajeet Age :- 31 Gender :- male
 print(p.age)  # 31

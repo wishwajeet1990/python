@@ -6,7 +6,6 @@
 class MyClass:
     def __init__(self):
         self._value = "Protected"
-
 class SubClass(MyClass):
     def show(self):
         print(self._value)  # ✅ Allowed in subclass

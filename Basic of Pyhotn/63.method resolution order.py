@@ -9,6 +9,7 @@ class B(A):
         print("Class B")
         pass
 
+
 class C(A):
     def show(self):
         print("Class C")

@@ -9,6 +9,7 @@ def prefix(func):
         print(f"running {inner.__name__}")
         func()
     return inner
+    
 
 @prefix         #my_func = prefix(my_func)
                 #here func = my_func and return new function called inner

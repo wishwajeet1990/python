@@ -11,6 +11,7 @@ def deco2(func):
         func()
         print("After func → from deco2")
     return wrapper2
+    
 
 @deco1
 @deco2

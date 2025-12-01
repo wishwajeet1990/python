@@ -24,6 +24,7 @@
 |                   | (unless _Class__var)|                      |
 +------------------+---------------------+-----------------------+
 
+
 🔹 Name Mangling Example in Python:
     self.__var  →  self._ClassName__var
 """

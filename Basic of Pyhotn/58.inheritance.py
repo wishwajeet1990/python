@@ -8,6 +8,7 @@
 | Diamond Problem | Two child inherit from same parent class, child inherits from both |
 
 """
+
 class Father:
     def house(self):
         print("Father's House")

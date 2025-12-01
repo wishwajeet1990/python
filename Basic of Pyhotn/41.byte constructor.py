@@ -16,6 +16,7 @@ print(b)         # b'\x00\x00\x00\x00'
 b = bytes([65, 66, 67])
 print(b)         # b'ABC'
 
+
 #String + Encoding – encodes string into bytes:
 b = bytes("Wishwajeet", encoding='utf=8')
 print(b)         # b'Wishwajeet'

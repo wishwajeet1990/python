@@ -26,6 +26,7 @@ print("a is b :- ",a is b)  # True – same object
 print("a is c :- ",a is c)  # False – different objects with same value
 print("a == c :- ",a == c)  # True – values are the same
 
+
 a = 512215
 b = 512215
 if a is b:

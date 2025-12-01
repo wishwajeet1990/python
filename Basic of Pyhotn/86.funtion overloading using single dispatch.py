@@ -29,7 +29,6 @@ def __(data):
 @process_data.register(list)
 def __(data):
     print(f"Processing list values \"{data}\"")
-
 my_list = [2,3,4,5,6,7,8,9,10]
 my_tuple = (1,2,3,54,6,7,78,191)
 
