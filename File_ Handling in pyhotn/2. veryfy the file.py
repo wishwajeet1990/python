@@ -3,7 +3,7 @@
 
 import os as o
 
-if o.path.exists(r"D:\Python\Codding\File_ Handling\ my_file_1.txt"): #We use r → to prevent Python from confusing \n, \t, etc.
+if o.path.exists(r"E:\\Training\\Python\\Codding\\File_ Handling in pyhotn\\my_file_1.txt"): #We use r → to prevent Python from confusing \n, \t, etc.
     print("File Exists")
 else:
     print("File not exists")

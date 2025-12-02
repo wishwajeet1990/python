@@ -12,7 +12,7 @@
 
 
 
-file  = open(r"D:\Python\Codding\File_ Handling\ my_file_5.txt","r")
+file  = open(r"E:\\Training\\Python\\Codding\\File_ Handling in pyhotn\\my_file_6.txt","r")
 print(file.readline()) 
 """No when we read this file my cursor has been reached at EOL and when we again 
                         try to read this file it starts read from next to cursor position """
@@ -21,6 +21,6 @@ print(file.readline())
 print(file.readline())  #As we already at EOF it will not print anything
 file.seek(0)    #Set cursor to Start of file
 print(file.readline())  #As we are at SOF it will print from starting
-file.seek(10,0)     #Start at 10 character 
+file.seek(12,0)     #Start at 10 character 
 print(file.readline())  #As we are at SOF it will print from starting till \n finds
 print(file.read())  #As we are at second line it will print from third line till EOF

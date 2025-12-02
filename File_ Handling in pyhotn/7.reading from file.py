@@ -1,6 +1,6 @@
 import time 
 
-file = open(r"D:\Python\Codding\File_ Handling\ my_file_5.txt","r")         #Open the file in read mode only we can't write to it
+file = open(r"E:\\Training\\Python\\Codding\\File_ Handling in pyhotn\\my_file_6.txt","r")         #Open the file in read mode only we can't write to it
 my_line = file.read()
 print(my_line) #Can be read as to store into object or by directly by print statement
 print(file.read())

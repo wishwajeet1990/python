@@ -1,6 +1,6 @@
 # truncate will resize the file after the passed parament position
 
-file = open(r"D:\Python\Codding\File_ Handling\ my_file_5.txt","a+")
+file = open(r"E:\\Training\\Python\\Codding\\File_ Handling in pyhotn\\my_file_6.txt","a+")
 content = file.read()
 print(content)
 file.seek(33)

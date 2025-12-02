@@ -1,0 +1,1 @@
+E:\\Training\\Python\\Codding\\File_ Handling in pyhotn\\my_file_6.txt
