@@ -28,3 +28,4 @@ if __name__ == "__main__":
     p1.join()
     p2.join()
     print("Programme End here")
+print(dir(Queue))

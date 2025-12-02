@@ -1,16 +1,26 @@
-class student :
-    def __init__(self,name,roll_no):
-        self.name = name
-        self.roll_no = roll_no
-        print("Name  = ",self.name)
-        print(self.roll_no)
-class student:
-    def __init__(self,branch,college):
-        self.branch = branch
-        self.college = college
-        print("Branch = ",self.branch)
-        print("College = ",self.college)
-        
-s1 = student("Wishwajeet",213)
-        
-        
+import threading, time
+
+lock1 = threading.Lock()
+lock2 = threading.Lock()
+
+def task1():
+    lock1.acquire()
+    print("Task1 got lock1")
+    lock2.acquire()   # waits forever
+    print("Task1 got lock2")
+    lock2.release()
+    lock1.release()
+
+def task2():
+    lock2.acquire()
+    print("Task2 got lock2")
+    lock1.acquire()   # waits forever
+    print("Task2 got lock1")
+    lock1.release()
+    lock2.release()
+
+t1 = threading.Thread(target=task1)
+t2 = threading.Thread(target=task2)
+
+t1.start()
+t2.start()

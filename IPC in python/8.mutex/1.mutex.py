@@ -10,6 +10,7 @@ import threading
 lock = threading.Lock()
 counter = 0
 
+
 def task():
     global counter
     for _ in range(1000000):

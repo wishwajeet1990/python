@@ -20,5 +20,6 @@ if __name__ == "__main__":          # We use this line because when the new proc
         new_process.join()          #This tells the parent process to wait until the child process finishes
         t.sleep(1)
         print()
+        
     print("Child process finished")
     

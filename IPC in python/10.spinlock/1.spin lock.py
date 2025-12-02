@@ -30,7 +30,7 @@ counter = 0
 
 def task():
     global counter
-    for _ in range(10000):
+    for _ in range(1000000):
         spinlock.acquire()
         counter += 1
         spinlock.release()

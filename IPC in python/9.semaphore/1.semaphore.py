@@ -11,9 +11,9 @@ sem = threading.Semaphore(2)  # allow max 2 threads at a time
 
 def worker(n):
     with sem:  # acquire automatically
-        print(f"Thread {n} entered")
+        print(f"Thread {n} entered\n")
         time.sleep(1)
-        print(f"Thread {n} leaving")
+        print(f"Thread {n} leaving\n")
 
-for i in range(5):
+for i in range(50):
     threading.Thread(target=worker, args=(i,)).start()

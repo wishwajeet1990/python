@@ -49,6 +49,7 @@ def count_dec():
 if __name__ == "__main__":
     thread1 = threading.Thread(target=count_inc,args=())
     thread2 = threading.Thread(target=count_dec,args=())
+    # thread1.join()
     thread1.start()
     thread2.start()
     thread1.join()
