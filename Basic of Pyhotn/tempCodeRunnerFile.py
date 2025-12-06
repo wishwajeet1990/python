@@ -1,2 +1,1 @@
-
-        return cls(s1)
+yt-dlp -f bestvideo+bestaudio --merge-output-format mp4 "https://youtu.be/DYRnuig8ISk?si=Ww7FtXtv_wEgKHSx"
