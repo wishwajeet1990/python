@@ -1,0 +1,20 @@
+print("Q1. Type of file we can deal with pamdas")
+print(""" here is list of file that we can deal with pandas\n
+File        Format Example Extension	Pandas Function
+CSV	        .csv	                    read_csv()
+Excel   	.xlsx,.xls	                read_excel()
+JSON	    .json	                    read_json()
+Text    	.txt	                    read_csv()
+HTML	    .html	                    read_html()
+SQL	        .db, .sqlite	            read_sql()
+Parquet	    .parquet	                read_parquet()
+ORC	        .orc	                    read_orc()
+Pickle	    .pkl	                    read_pickle()
+Feather	    .feather	                read_feather()
+Avro	    .avro	                    (via external libs)
+SAS	        .sas7bdat	                read_sas()
+SPSS	    .sav	                    read_spss()
+Stata	    .dta	                    read_stata()
+HDF5	    .h5	                        read_hdf()
+
+""")
