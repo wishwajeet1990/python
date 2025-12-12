@@ -1,0 +1,16 @@
+{
+    "people": [
+        {
+            "name": "Wishwajeet Singh",
+            "phone": 9991100891,
+            "email": ["Wishwajeetrana1990@gmail.com", "bogusmail@gmail.com"],
+            "has_licence": true
+        },
+        {
+            "name": "Monu Singh",
+            "phone": 9467350434,
+            "email": ["aryanrana1990@gmail.com", "unclechips@gmail.com"],
+            "has_licence": true
+        }
+    ]
+}

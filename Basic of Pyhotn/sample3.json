@@ -1,0 +1,17 @@
+{
+    "Company":  [
+        {
+           "Company_Name" : ["RT Vision","HCL","HP","Microsoft","Google"],
+            "Emp_Id" : "RTV001",
+            "Emp_Name" : "Ankush Sharma",
+            "Address" : "Gurgaon", 
+            "Pin_Code" : ["110011","127111"] 
+        }
+    ],
+    "Profile":  [
+        {
+            "Job_Title" :["Embeded Engineer","Software Engineer","It Engineer","Design Engineer","AI Engineer"],
+            "Salary":["25000","30000","50000","60000","100000"]
+        }
+    ]
+}
