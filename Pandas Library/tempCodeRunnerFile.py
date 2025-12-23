@@ -1,1 +1,2 @@
-E:\\Training\\Python\\Codding\\Pandas Library\\
+sns.countplot(data=data,x ='age')
+# p
