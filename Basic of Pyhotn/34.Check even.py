@@ -6,9 +6,9 @@ end  = False
 start_num = int(input("Start Number :- "))
 end_num = int(input("End Number :- "))
 
-even = [yes for yes in range(end_num) if yes%2 ==0]
+even = [evn for evn in range(end_num) if evn%2 == 0]
 print(even)
-odd = [yes for yes in range(end_num) if yes%2 !=0]
+odd = [od for od in range(end_num) if od%2 != 0]
 print(odd)
 
 value = start_num

@@ -11,8 +11,7 @@
 #As the sets are using hashing tech to store the data/element hence it not possible to access the element byt their index.
 #Also due to this while getting/reterving the sets we might get the different ordered manner while fetching
 
-
-my_dict = {"Wishwajeet":99,"Rahul":54,"Monu":98,"Wishwajeet":99}
+my_dict = {"Wishwajeet":99,"Rahul":54,"Monu":98,"Wishwajeet":105}
 print(my_dict)  #Here when you run this code then you have will see the last updated key value pair will be printed not the earlier one wishwajeet key value pair
 print("\n") 
 

@@ -32,6 +32,7 @@ print("From dictionary\n")
 my_dict = {'a': 1, 'b': 2}
 my_list = list(my_dict) #Passing a dictionary to list constructor
 print(my_list)
+print(my_dict.values())
 print("\n")
 
 print("Empty List\n")

@@ -8,6 +8,7 @@ class MyClass:
 
 obj1 = MyClass("A")
 obj2 = MyClass("B")
+obj4= MyClass("C")
 
 print(obj1.name)
 print(obj2.name)
@@ -22,6 +23,9 @@ class MyClass2:
 
 obj3 = MyClass2("C")
 obj4 = MyClass2("D")
+obj5 = MyClass2("E")
 print(obj3.name)
 print(obj4.name)
+print(obj4.name)
+
 print("End of program...")

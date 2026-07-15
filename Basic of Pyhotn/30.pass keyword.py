@@ -10,4 +10,3 @@ a = 20
 if a <100:
     pass    #After being using the place holder the error showing will be removed
 print("End of the programme")   #here it gives an error bcz of indentation 
-

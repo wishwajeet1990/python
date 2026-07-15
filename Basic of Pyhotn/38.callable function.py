@@ -11,7 +11,10 @@ print(callable(any_num))    # this return false bcz it is just a variable
 
 
 def greet():
-    print("Hello!")
+    my_list = list([2,3,4,5,6,7,8])
+    print("Hello")
+    print(my_list)
+    return print
     
 print(callable(greet))   # True (it's a function)
 print(callable(greet())) # greet() is called first, so result is None; callable(None) False

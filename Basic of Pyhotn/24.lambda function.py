@@ -26,7 +26,7 @@ that mean square is just not work like a normal variable it can accept the argum
 
 
 
-print("enter your nmber in diffrent sub")
+print("enter your number in diffrent sub")
 marks = lambda a,b,c,d,e : (a+b+c+d+e)/5
 hindi = int(input("hindi :- "))
 english = int(input("english :- "))

@@ -18,13 +18,13 @@ class RT_Vision:
     #this invoked automatically whenever the object of the class is created 
     #if you create n number of object then it will called each time and assign the default values to the data member of the class 
     
-    def __init__(self,name  = "Wishwajeet",emp_id = "RTV213"):
+    def __init__(self,name  = "Wishwajeet",emp_id = "RTV213",branch = "Firmware"):
         self.name = name
         self.emp_id = emp_id
-        print(f"name :- {self.name}",f"Emp Id :- {self.emp_id}")
+        print(f"name :- {self.name}",f"Emp Id :- {self.emp_id}",f"Branch :- {branch}")
 
 rtv_1 = RT_Vision()     #Constructor will automatically be called
-rtv_2 = RT_Vision("Satyajeet","RTV222")     #Constructor will automatically be called
+rtv_2 = RT_Vision("Satyajeet","RTV222","IT")     #Constructor will automatically be called
 rtv_3 = RT_Vision()     #Constructor will automatically be called
 rtv_4 = RT_Vision()     #Constructor will automatically be called
 rtv_5 = RT_Vision()     #Constructor will automatically be called

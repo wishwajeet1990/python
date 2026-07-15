@@ -35,3 +35,8 @@ for key in student.values():
     all_name.append(key["Stream"])
 print(all_name)
 
+print("Trying something new")
+for key in student:
+    for value in student[key]:
+        if(value == "name"):
+            print(student[key]["name"])

@@ -8,5 +8,5 @@ def outer():
         print(name)     #Here in this function block there is no any variable name "name" hence it will search for this within the nearest function block i.e outer function block.
     inner()
 outer()
-print(name)
+print("Acccesing the global variable :-  {}".format(name))
 

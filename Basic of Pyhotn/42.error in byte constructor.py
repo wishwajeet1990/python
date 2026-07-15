@@ -3,7 +3,7 @@
 # strict	            :- Default. Throws error on bad character
 # ignore	            :- Skips unsupported characters
 # replace	            :- Replaces unsupported characters with ?
-# backslashreplace	:- Replaces with Python-style escape: \uXXXX
+# backslashreplace	    :- Replaces with Python-style escape: \uXXXX
 # namereplace	        :- Uses Unicode name: 
 # 
 # """

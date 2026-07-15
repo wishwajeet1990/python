@@ -1,4 +1,4 @@
-#create object in class
+# create object in class
 
 class test_class:
     def __init__(self,name,age,sex,exp):
@@ -6,7 +6,6 @@ class test_class:
         self.age=age
         self.sex = sex
         self.exp=exp
-
 
 t1 = object.__new__(test_class)
 test_class.__init__(t1,"wishwajeet",34,"M","6 Yrs")

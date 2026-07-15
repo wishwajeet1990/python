@@ -9,17 +9,16 @@ print("this programme tells you the control flow of the programme using if else 
 
 
 
-condition = True
+condition_true = True
 
-if condition:
+if condition_true:
     print("Return True result\n")
 else:
     print("Return false result\n")
     
-condition = False
+condition_true = False
 
-
-if condition:
+if condition_true:
     print("Return True result\n")
 else:
     print("Return false result\n")

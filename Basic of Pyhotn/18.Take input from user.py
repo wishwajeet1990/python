@@ -12,5 +12,3 @@ elif(age>18 and age<80):
     print("Hey ! %s your age is %d. You are are now adult and your are liable to drive vehicle"%(name,age))
 else:
     print("Hey ! %s your age is %d. You are are now overage hence you are not liable to drive vehicle"%(name,age))
-    
-    

@@ -8,7 +8,7 @@ tpl = ("a", 1, True)        # Mixed data types
 print("Mixed data types",tpl)
 tpl = (5,)                  # Single-element tuple (note the comma)
 print("Single-element tuple (note the comma)",tpl)
-tpl = (1, 2, 3,4,5,6,7,8,9,10)             # Tuple of integers
+tpl = (1 , 2 , 3 , 4 , 5 , 6 ,  7 , 8 , 9 , 10 )             # Tuple of integers
 print(tpl)
 tpl1 = tuple(tpl)       #Simply copy the tpl to tpl1 variable
 print(tpl1)

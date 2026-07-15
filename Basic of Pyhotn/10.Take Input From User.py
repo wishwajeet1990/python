@@ -12,8 +12,7 @@ if(age <18):
     print("Mr %s your age is %s . hence you are minor and not liable to drive the vehicle"%(name,age)) #using old style string format
 else:
     print(f"Mr {name} your age is {age} . hence you are adult and liable to drive the vehicle") #using string format
-    print("Mr {} your age is {} . hence you are minor and not liable to drive the vehicle".format(name,age)) #using string format function
-    print("Mr %s your age is %s . hence you are minor and not liable to drive the vehicle"%(name,age)) #using old style string format
+    print("Mr {} your age is {} . hence you are adult and liable to drive the vehicle".format(name,age)) #using string format function
+    print("Mr %s your age is %s . hence you are adult and liable to drive the vehicle"%(name,age)) #using old style string format
     
 print("after being update of code runner setting")
-

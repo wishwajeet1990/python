@@ -11,17 +11,21 @@ print(data)          # bytearray(b'Aishwajeet')
 data[4] = 99
 print(data)          # bytearray(b'Aishcajeet')
 
-
 mystr = b"Wishwajeet"
 print(mystr)
-
 
 print(mystr[3]) # It will print the 4th letter of the string
 n_mv = memoryview(mystr)
 # n_mv[4]= 127 # it will raise an error while run with comment this line because this will not work directly without bytearray
 print(mystr)
 
+new_str = bytearray(mystr)
+m_v = memoryview(new_str)
 
+m_v[0] = 98
+
+print("my_str = {}".format(mystr))
+print("New_str = {}".format(new_str))
 """--------------------------------------------------------------------
 Notes:- 
     We can't use memoryview with str directly. 

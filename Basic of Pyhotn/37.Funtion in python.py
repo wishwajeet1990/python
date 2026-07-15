@@ -25,7 +25,7 @@ def add(a:int,b:int)-> int:
 
 sum = add(2,3)
 print(sum)
-sum = add(2.98,3.43) # This will also run perfectly fine bcz it doesn't bound to the type of data to passed to a function
+sum = add(2.98,3) # This will also run perfectly fine bcz it doesn't bound to the type of data to passed to a function
 print(sum)
 
 # Annotate with Default Values

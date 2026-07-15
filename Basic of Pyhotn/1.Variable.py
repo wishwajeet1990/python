@@ -10,4 +10,3 @@ var3 = "Wishwajeet Singh"   #this is string value
 print("This is just simple String passed to the print function \nHello Python")
 print("addition  = ",var1+var2)
 print("Name :- ",var3)
-ls

@@ -22,8 +22,6 @@ bytes(str,encoding= "",error="")
 ------------------------------end----------------------------------------------------
 """
 
-
-
 b = bytes("Wishwajeeté",encoding="ASCII",errors="ignore")
 print(b)         # b'Wishwajeet'
 

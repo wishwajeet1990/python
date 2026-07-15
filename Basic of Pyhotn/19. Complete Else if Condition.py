@@ -23,14 +23,13 @@ print("You are underage") if(age<18) else print("Your are Adult")
 
 #or
 
-
 status = "underage" if(age<18) else "Adult"
 print(f"you are {status}")
 
 # Multilevel Short hand else if
 
 """Syntax for multilevel if else"""
-# <var> = <true_val> condition else <false_val/<True for next elsif>> condition else <false_val>
+# # <var> = <true_val> condition else <false_val/<True for next elsif>> condition else <false_val>
 
 score = int(input("Input your score "))
 grade = "A" if score > 90 else "B" if score > 70 else "C"

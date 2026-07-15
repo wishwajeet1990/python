@@ -6,7 +6,7 @@ print(lst)
 lst = [1, 2, 3, 4, 5]       # List of integers
 print(lst)
 lst1 = list(lst)
-print("chagne in list element ")
+print("change in list element ")
 
 lst1[0] = 10
 print(lst1)
@@ -36,7 +36,7 @@ print(lst)
 lst.pop(1)              # Removes item at index
 print(lst)
 del lst[0]              # Removes element at index 0 
-print(lst)
+print("After Delete :- {}{}".format(lst,lst_1))
 lst.clear()             # Empties the list → []
 print(lst)
 

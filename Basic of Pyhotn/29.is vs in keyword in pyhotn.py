@@ -30,7 +30,7 @@ print("a == c :- ",a == c)  # True – values are the same
 a = 512215
 b = 512215
 if a is b:
-    print("Value Available")
+    print("\nValue Available\n")
 else:
     print("Value Not available")
     
@@ -44,4 +44,3 @@ print(a is b)           #print true because of constant folding concept in pytho
 a = "512215"
 b = "512215"
 print(a is b)           #print false because value is calculated at runtime, Python does NOT intern the number
-                    

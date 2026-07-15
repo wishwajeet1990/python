@@ -15,8 +15,6 @@ my_set = {1,2.5,"wishwajeet",3+4j}
 print(my_set)
 print("\n")
 
-
-
 #create empty sets
 print("Empty set")
 my_set = set()
@@ -39,4 +37,3 @@ my_dict = {"Wishwajeet":99,"Rahul":54,"Monu":98,"Wishwajeet":99}
 my_set = set(my_dict)       #Using tuple but in unordered manner and duplicate will be removed automatically
 print(my_set)
 print("\n")
-

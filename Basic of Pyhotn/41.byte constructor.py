@@ -1,5 +1,5 @@
-"""The bytes() constructor creates an immutable sequence of bytes (integers in the range 0–255).
-It’s like a read-only array of bytes."""
+"""The bytes() constructor creates an immutable sequence of bytes (integers in the range 0 - 255).
+It's like a read-only array of bytes."""
 
 """------------------------------Syntax---------------------------------
                 bytes([source[, encoding[, errors]]])

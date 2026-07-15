@@ -51,8 +51,9 @@ print(person_dtls)
 # del person_dtls[0]          #Delete a complete dictionary at 0th position
 # print(person_dtls)
 
-# print(person_dtls[0].pop("name"))       #Remove the dictionary value from the dictionary 0 where the key is name
-# print(person_dtls)
+print("POP Operation")
+print(person_dtls[0].pop("name"))       #Remove the dictionary value from the dictionary 0 where the key is name
+print(person_dtls)
 
 # #clear the Dictionary 
 

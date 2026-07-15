@@ -1,8 +1,6 @@
 #This programme will let yoy know about the constructor 
 
 class student:
-    
-    
     def __init__(self, name,emp_id):
         self.name = name
         self.emp_id = emp_id

@@ -29,7 +29,8 @@ class Student:
         print("Name = ",self.roll)
 
 s1 = object.__new__(Student)        #Create new empty object for class student
-
+# print(s1.name)
+# print(s1.roll)
 """----------Syntax--------------------------
 Name_object = object.__new__(class_name)
 ---------------------------------------------"""

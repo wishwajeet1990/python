@@ -51,9 +51,6 @@ print("\t\t\tlist\t\t\ttuple\t\t\tset\t\t\tdictonary\t\tbyte\t\tbytearray")
 print("mutable \tyes\t\t\t\tNo\t\t\t\tyes\t\t\tyes\t\t\t\tno\t\t\tYes")
 print("Ordered \tyes\t\t\t\tyes\t\t\t\tyes*/No*\tyes\t\t\t\tyes\t\t\tYes")
 print("Duplicate \tyes\t\t\t\tyes\t\t\t\tNo\t\t\tNo\t\t\t\tyes\t\t\tYes")
-
 print("An object that can be called like a function using parentheses ().")
-
-
 print("*args  =  Store the tuple value in while calling the function ")
 print("**kwargs =  stores the dict value while passing through the function calling")

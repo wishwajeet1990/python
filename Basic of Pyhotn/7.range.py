@@ -8,6 +8,7 @@
 
 my_range = range(10,100,2)  #define the range
 
+
 print(list(my_range))   # simply use to print the simply list of the range
 
 # or using the iterative tech to print the range

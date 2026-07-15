@@ -1,8 +1,10 @@
 my_tuple = tuple((33,22,55,66,77,88,22,33,4,5,77,88,66))
+print("my_tuple {}".format(my_tuple))
 my_list = list(my_tuple)
 my_list.sort(reverse=False)
-print(my_list)
+print("reverse of my_list false {}".format(my_list))
+my_list.sort(reverse=True)
+print("reverse of my_list true {}".format(my_list))
 new_unique_list  = list(set(my_list))
 new_unique_list.sort()
-print(new_unique_list)
-
+print("new_unique_list {}".format(new_unique_list))

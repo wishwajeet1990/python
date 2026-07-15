@@ -21,4 +21,3 @@ print(c1.name)
 print(calculator.add(5,7))      #Calling of static method is same as that of regular function
 print(c1.name)
 #Always calling done via class not by instance
-
